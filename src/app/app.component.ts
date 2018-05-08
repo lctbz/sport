@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  sports = [
+    { name: "Natation", path: "natation" },
+    { name: "Cyclisme", path: "cyclisme" },
+    { name: "Running", path: "running" }
+  ]
 }
