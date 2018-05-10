@@ -1,0 +1,36 @@
+<div>
+    <table mat-table #table [dataSource]="dataSource">
+        <ng-container matColumnDef="Type">
+            <th mat-header-cell *matHeaderCellDef>Type</th>
+            <td mat-cell *matCellDef="let activity">{{activity.Type}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="Date">
+            <th mat-header-cell *matHeaderCellDef>Date</th>
+            <td mat-cell *matCellDef="let activity">{{activity.Date}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="Distance">
+            <th mat-header-cell *matHeaderCellDef>Distance</th>
+            <td mat-cell *matCellDef="let activity">{{activity.Distance}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="Durée">
+            <th mat-header-cell *matHeaderCellDef>Durée</th>
+            <td mat-cell *matCellDef="let activity">{{activity.Temps}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="Vitesse">
+            <th mat-header-cell *matHeaderCellDef>Vitesse</th>
+            <td mat-cell *matCellDef="let activity">{{activity.Vitesse}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="Calories">
+            <th mat-header-cell *matHeaderCellDef>Calories</th>
+            <td mat-cell *matCellDef="let activity">{{activity.Calories}}</td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+</div>

@@ -29,3 +29,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Deploy on firebase
 
 To deploy the application on firebase. You just have to use `ng build --prod` and after use `firebase deploy`. After that, you can access to the website by this url https://sport-e1e14.firebaseapp.com/.
+
+## Configure the application on firebase console
+https://console.firebase.google.com/project/sport-e1e14

@@ -1,11 +1,13 @@
-<mat-toolbar color='primary'>Sport</mat-toolbar>
-<!-- <mat-tab-group>
-    <mat-tab *ngFor='let sport of sports' label='{{sport.name}}' [routerLink]="/natation">
-    </mat-tab>
-</mat-tab-group> -->
+<mat-toolbar color='primary'>
+	<a mat-button routerLink="/homepage">
+		<h1>Sport</h1>
+	</a>
+	<button mat-button (click)="addActivity()">write</button>
+	<button mat-button (click)="readActivity()">read</button>
+</mat-toolbar>
 <nav mat-tab-nav-bar>
-    <a mat-tab-link *ngFor='let sport of sports' [routerLink]="sport.path" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
-        {{sport.name}}
-    </a>
+	<a mat-tab-link *ngFor='let sport of sports' [routerLink]="sport.path" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
+		{{sport.name}}
+	</a>
 </nav>
 <router-outlet></router-outlet>
